@@ -14,12 +14,14 @@
               <div class="card">
             <h6 id={{i}} appStrikethrough>{{quotes[i].quoteTitle}} posted by {{quotes[i].author}}</h6>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Wine Quote</button>
-          </div>
+              </div>
+            </div>
   
-          <div *ngIf='quotes[i].Description'>
+          <div *ngIf='quotes[i].showDescription'>
             <app-quote-detail  [Quotes]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
           </div>
-        </div>
+        
+        
         </div>
         </div>
       </div>
