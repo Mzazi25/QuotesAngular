@@ -9,13 +9,13 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes [] = [
-    new Quotes (1,'Enock Abere', 'Electricity', 'Mambo ya stima achia watu wa stima. Ntakufinya!', 'Isaac Newton', new Date(2021,6,1)),
+    new Quotes (1,'Caleb Langat', 'Cabernet Sauvignon', 'Cabernet Sauvignon is a full-bodied red grape first heavily planted in the Bordeaux region. Today, its the most popular wine variety in the world', 'Mzazi', new Date(2021,6,1)),
     new Quotes (2,'Enock Abere', 'Life Hack', 'Ama niambie landlord nikae ile nyumba haina mtu kuliko ikae bure, ikipata mtu nihame', 'Isaac Newton',new Date(2021,6,2)),
     new Quotes (3,'Enock Abere', 'Kizangila', 'Omosh, this property is not for sale','Isaac Newton', new Date(2021,6,2)),
     new Quotes (4,'Enock Abere', 'Nduthi Guys', 'Weka simu kwa mfuko ukiona nduthi guys','Isaac Newton', new Date(2021,6,3))
   ]
 
-  toggleDetails(index:number){
+  toggleDetails(index:any){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
   deleteQuote(isComplete:Boolean, index:number){
