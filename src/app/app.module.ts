@@ -8,6 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { TimePasedPipe } from './time-pased.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     QuotesComponent,
     QuoteDetailComponent,
     QuoteFormComponent,
-    FooterComponent
+    FooterComponent,
+    TimePasedPipe
   ],
   imports: [
     BrowserModule,
