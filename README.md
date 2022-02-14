@@ -1,4 +1,5 @@
-## Quotes
+## QuotesAngular
+
 ## Project description
 A web application where users can create randon wine quotes and like and dislike the quotes.
 ##### By Caleb Langat
