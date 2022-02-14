@@ -11,15 +11,15 @@ export class QuoteDetailComponent implements OnInit {
   @Input() Quotes!: Quotes;
   @Output() isComplete = new EventEmitter<Boolean>()
 
-  numberOfLikes: number = 0;
-  numberOfDislikes: number = 0;
+  Likes: number = 0;
+  Dislikes: number = 0;
 
-  likeButtonClick(){
-    this.numberOfLikes++;
+  upVoteClick(){
+    this.Likes++;
   }
 
-  dislikeButtonClick(){
-    this.numberOfDislikes++;
+  downVoteClick(){
+    this.Dislikes++;
   }
 
   

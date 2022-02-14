@@ -2,6 +2,12 @@
 <!-- <p>This quote will be complete in {{Quotes.completeDate|date}} days</p> -->
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete quote</button>
 
-<button class="btn btn-success" (click)='likeButtonClick()' id="icon">
-    <i class="fa fa-thumbs-up" aria-hidden="true">Like</i>
+<P>{{Likes}}</P>
+<button class="btn btn-warning" (click)='upVoteClick()' id="icon">
+    <i class="fa fa-thumbs-up" aria-hidden="true">UpVote</i>
+  </button>
+
+<P>{{Dislikes}}</P>
+<button class="btn btn-warning" (click)='downVoteClick()' id="icon">
+    <i class="fa fa-thumbs-up" aria-hidden="true">DownVote</i>
   </button>
