@@ -10,6 +10,20 @@ export class QuoteDetailComponent implements OnInit {
 
   @Input() Quotes!: Quotes;
   @Output() isComplete = new EventEmitter<Boolean>()
+
+  numberOfLikes: number = 0;
+  numberOfDislikes: number = 0;
+
+  likeButtonClick(){
+    this.numberOfLikes++;
+  }
+
+  dislikeButtonClick(){
+    this.numberOfDislikes++;
+  }
+
+  
+
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete)
   }
